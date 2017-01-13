@@ -1,7 +1,13 @@
-#!/usr/bin/python3
+
+# coding: utf-8
+
+# In[3]:
 
 import pymysql
-pas = raw_input("Input pass for ka: \n")
+import getpass
+
+pas = getpass.getpass("Input pass for ka: \n")
+
 # Open database connection
 db = pymysql.connect("localhost", "henry", pas, "ka" )
 
@@ -18,3 +24,11 @@ print ("Database version : %s " % data)
 
 # disconnect from server
 db.close()
+
+
+# 
+
+# In[ ]:
+
+
+
